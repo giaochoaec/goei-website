@@ -1,0 +1,138 @@
+/* Gianella Ochoa Estética Integral — hoja de estilos única.
+   Colores y tipografía según el Manual de Marca (00 - VIVO - Identidad de marca):
+   verde #939d93 (predomina) · arena #ecd6b4 · Montserrat Regular y Bold.
+   El texto de lectura va en un gris oscuro: el verde de marca sobre blanco
+   no alcanza el contraste mínimo para leer. */
+
+:root {
+    --verde: #939d93;
+    --verde-claro: #eef0ee;
+    --arena: #ecd6b4;
+    --arena-claro: #faf4ea;
+    --texto: #2f332f;
+    --texto-suave: #5b615b;
+    --fondo: #ffffff;
+    --ancho: 760px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+    margin: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 400;
+    color: var(--texto);
+    background: var(--fondo);
+    line-height: 1.65;
+}
+
+a { color: var(--texto); text-decoration-color: var(--verde); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, .boton:focus-visible { outline: 3px solid var(--verde); outline-offset: 3px; }
+
+.envoltura {
+    max-width: var(--ancho);
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Encabezado */
+.encabezado {
+    background: var(--verde-claro);
+    border-bottom: 1px solid var(--verde);
+}
+.encabezado .envoltura {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.encabezado img { width: 44px; height: 44px; }
+.encabezado a { text-decoration: none; font-weight: 700; }
+
+/* Portada */
+.portada {
+    text-align: center;
+    padding: 56px 0 40px;
+}
+.portada img { width: 160px; height: 160px; }
+.portada h1 {
+    font-size: 1.7rem;
+    margin: 16px 0 4px;
+    font-weight: 700;
+}
+.eslogan {
+    color: var(--texto-suave);
+    margin: 0 0 28px;
+}
+.boton {
+    display: inline-block;
+    background: var(--verde);
+    color: #1d201d;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 14px 26px;
+    border-radius: 999px;
+}
+.boton:hover { background: #7f897f; color: #ffffff; }
+
+.redes {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 22px;
+}
+
+.datos {
+    background: var(--arena-claro);
+    border-top: 1px solid var(--arena);
+    border-bottom: 1px solid var(--arena);
+    padding: 28px 0;
+    text-align: center;
+}
+.datos p { margin: 4px 0; }
+
+/* Páginas legales */
+.legal { padding: 36px 0 48px; }
+.legal h1 { font-size: 1.6rem; line-height: 1.3; margin: 0 0 6px; }
+.legal h2 {
+    font-size: 1.1rem;
+    margin: 32px 0 8px;
+    padding-top: 12px;
+    border-top: 1px solid var(--verde-claro);
+}
+.legal .fecha { color: var(--texto-suave); margin-top: 0; }
+.legal li { margin-bottom: 6px; }
+.aviso {
+    background: var(--arena-claro);
+    border-left: 4px solid var(--arena);
+    padding: 12px 16px;
+    margin: 20px 0;
+}
+
+/* Pie */
+.pie {
+    background: var(--verde);
+    color: #1d201d;
+    padding: 22px 0;
+    font-size: 0.9rem;
+}
+.pie a { color: #1d201d; }
+.pie nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin-top: 6px;
+}
+
+@media (max-width: 480px) {
+    .portada { padding-top: 40px; }
+    .portada h1 { font-size: 1.4rem; }
+    .legal h1 { font-size: 1.35rem; }
+}
