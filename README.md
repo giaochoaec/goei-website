@@ -12,6 +12,7 @@ HTML estático servido por GitHub Pages. Sin compilación, sin JavaScript, sin c
 | `terminos-condiciones.html` | Condiciones de atención |
 | `styles.css` | Colores y tipografía del Manual de Marca (verde `#939d93`, arena `#ecd6b4`, Montserrat) |
 | `CNAME` | Dominio: `giaochoa.ec` |
+| `whatsapp-ig/` | Dirección corta **giaochoa.ec/whatsapp-ig**: redirige a `wa.me` con el texto «Hola, les escribí por Instagram y quiero información». La usa la respuesta automática a mensajes directos de Instagram (escenario de Make `GOEI Redes - entrada`), porque en Instagram web el botón no se ve. Sin JavaScript: redirección por `meta refresh` y un enlace de respaldo |
 | `robots.txt` | Abierto a todos los rastreadores: Meta revisa la política de privacidad con un rastreador automático |
 
 ## Reglas
